@@ -3,19 +3,12 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".ChatActivity"
     tools:ignore="MergeRootFrame">
 
     <WebView
-        android:id="@+id/activity_main_webview"
+        android:id="@+id/activity_chat_webview"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Chat"
-        android:id="@+id/chat_button"
-        android:layout_gravity="right|bottom" />
 
 </FrameLayout>

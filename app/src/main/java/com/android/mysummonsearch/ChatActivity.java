@@ -1,35 +1,22 @@
 package com.android.mysummonsearch;
 
 
-import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Button;
 
-public class SummonActivity extends AppCompatActivity {
+public class ChatActivity extends AppCompatActivity {
 
     private WebView mWebView;
-    private Button chat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_summon);
+        setContentView(R.layout.activity_chat);
 
-        mWebView = (WebView) findViewById(R.id.activity_main_webview);
-        chat = (Button) findViewById(R.id.chat_button);
-        chat.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), ChatActivity.class);
-                startActivity(intent);
-
-            }
-        });
+        mWebView = (WebView) findViewById(R.id.activity_chat_webview);
 
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
@@ -38,11 +25,11 @@ public class SummonActivity extends AppCompatActivity {
         mWebView.getSettings().setLoadWithOverviewMode(true);
         mWebView.getSettings().setUseWideViewPort(true);
 
-        mWebView.loadUrl("http://wpi.summon.serialssolutions.com/#!/");
+        mWebView.loadUrl("https://libraryh3lp.com/chat/ask-wpi-librarian@chat.libraryh3lp.com?skin=4195");
 
         //mWebView.addJavascriptInterface(new WebAppInterface(this), "Android");
 
-        mWebView.setWebViewClient(new WebViewClient(){
+        mWebView.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
                 //progDailog.show();
@@ -50,14 +37,13 @@ public class SummonActivity extends AppCompatActivity {
 
                 return true;
             }
+
             @Override
             public void onPageFinished(WebView view, final String url) {
                 //progDailog.dismiss();
             }
         });
     }
-
-
 
     @Override
     public void onBackPressed() {
