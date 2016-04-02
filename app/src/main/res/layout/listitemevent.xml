@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/eventName"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:id="@+id/id_eventName" />
+
+        <TextView
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/eventDate"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:id="@+id/id_eventDate" />
+
+        <TextView
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/eventStartTime"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:id="@+id/id_eventStartTime" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/eventEndTime"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:id="@+id/id_eventEndTime" />
+
+    </LinearLayout>
+</LinearLayout>
