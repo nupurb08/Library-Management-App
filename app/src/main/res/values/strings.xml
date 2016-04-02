@@ -4,4 +4,8 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_chat">ChatActivity</string>
+    <string name="eventName">Event Name</string>
+    <string name="eventDate">Event Date</string>
+    <string name="eventStartTime">Event Start Time</string>
+    <string name="eventEndTime">Event End Time</string>
 </resources>
