@@ -1,7 +1,16 @@
 <resources>
-    <string name="app_name">MySummonSearch</string>
+    <string name="app_name">WPI Gordon Library</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="title_activity_chat">ChatActivity</string>
+    <string name="title_activity_chat">Chat</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_summon">Search</string>
+    <string name="title_activity_calendar">Library Timings</string>
+    <string name="title_activity_library">LibraryActivity</string>
+    <string name="eName">Event Name</string>
+    <string name="eDate">Event Date</string>
+    <string name="eStTime">Start Time</string>
+    <string name="eEnTime">End Time</string>
+
 </resources>

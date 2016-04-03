@@ -37,6 +37,9 @@ public class SummonActivity extends AppCompatActivity {
 
         mWebView.getSettings().setLoadWithOverviewMode(true);
         mWebView.getSettings().setUseWideViewPort(true);
+        mWebView.getSettings().setSupportZoom(true);
+        mWebView.getSettings().setBuiltInZoomControls(true);
+        mWebView.getSettings().setDisplayZoomControls(false);
 
         mWebView.loadUrl("http://wpi.summon.serialssolutions.com/#!/");
 

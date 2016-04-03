@@ -1,6 +1,8 @@
 package com.android.mysummonsearch;
 
+
 import android.accounts.AccountManager;
+import android.app.Activity;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -16,6 +18,7 @@ import android.text.method.ScrollingMovementMethod;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 import com.google.api.client.extensions.android.http.AndroidHttp;
@@ -34,13 +37,13 @@ import com.google.api.services.calendar.model.Events;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Calendar;
 import java.util.List;
+
 
 /**
  * Created by Nupurb on 23-02-2016.
  */
-public class CalendarTrial extends AppCompatActivity {
+public class CalendarTrial extends Activity {
 
     GoogleAccountCredential mCredential;
     private TextView mOutputText;
@@ -130,9 +133,8 @@ public class CalendarTrial extends AppCompatActivity {
             case REQUEST_ACCOUNT_PICKER:
                 if (resultCode == RESULT_OK && data != null &&
                         data.getExtras() != null) {
-                    String accountName = "jigishasinha@gmail.com";
-                    System.out.println("#####Account Name####" + data.getStringExtra(AccountManager.KEY_ACCOUNT_NAME));
-                            //data.getStringExtra(AccountManager.KEY_ACCOUNT_NAME);
+                    String accountName =
+                            data.getStringExtra(AccountManager.KEY_ACCOUNT_NAME);
                     if (accountName != null) {
                         mCredential.setSelectedAccountName(accountName);
                         SharedPreferences settings =

@@ -24,6 +24,8 @@ public class ChatActivity extends AppCompatActivity {
 
         mWebView.getSettings().setLoadWithOverviewMode(true);
         mWebView.getSettings().setUseWideViewPort(true);
+        mWebView.getSettings().setBuiltInZoomControls(true);
+        mWebView.getSettings().setDisplayZoomControls(false);
 
         mWebView.loadUrl("https://libraryh3lp.com/chat/ask-wpi-librarian@chat.libraryh3lp.com?skin=4195");
 
