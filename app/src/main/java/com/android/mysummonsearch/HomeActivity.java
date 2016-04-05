@@ -9,9 +9,12 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Gallery;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -29,7 +32,7 @@ public class HomeActivity extends AppCompatActivity {
         calendarButton = (ImageButton) findViewById(R.id.calendarButton);
         wpi = (ImageView) findViewById(R.id.wpi);
 
-        wpi.setImageDrawable(getResources().getDrawable(R.drawable.wpi));
+       // wpi.setImageDrawable(getResources().getDrawable(R.drawable.wpi));
         chatButton.setImageDrawable(getResources().getDrawable(R.drawable.chat));
         searchButton.setImageDrawable(getResources().getDrawable(R.drawable.search));
         facebookButton.setImageDrawable(getResources().getDrawable(R.drawable.facebook));

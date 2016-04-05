@@ -8,6 +8,7 @@
     <string name="title_activity_summon">Search</string>
     <string name="title_activity_calendar">Library Timings</string>
     <string name="title_activity_library">LibraryActivity</string>
+    <string name="welcome">Welcome to WPI Gordon Library</string>
     <string name="eName">Event Name</string>
     <string name="eDate">Event Date</string>
     <string name="eStTime">Start Time</string>

@@ -7,14 +7,29 @@
     tools:context="com.android.mysummonsearch.LibraryActivity"
     android:background="@drawable/library"
     android:clickable="true"
-    android:id="@+id/relLayout">
+    android:id="@+id/relLayout"
+    android:gravity="center_vertical">
 
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Next"
+        android:text="Click to continue"
         android:id="@+id/nextButton"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="@string/welcome"
+        android:id="@+id/welcome"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:textColor="#ffffff"
+        android:shadowColor="#98ff3c"
+        android:gravity="center_vertical|center"
+        android:layout_marginTop="700dp" />
 </RelativeLayout>
